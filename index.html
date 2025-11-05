@@ -109,7 +109,7 @@
 ========================== */
 const LOGO_URL = "https://raw.githubusercontent.com/Daniel-Empire/ACME-LOGO/0bf35e57e8900de8e0e9dee5c9feb31a34d37030/logo.png"; // replace as needed
 const PASSWORD = "acme2025";
-const TOTAL_TIME_SECONDS = 5*60;
+const TOTAL_TIME_SECONDS = 40*60;
 
 const questionsData = {
   physics: {
@@ -127,11 +127,11 @@ const questionsData = {
   chemistry: {
     name: "Chemistry",
     subsections: {
-      "chapter 1 jamb remix": [
+      "null": [
         {q:"What is the chemical formula for ethanol?",choices:["C2H5OH","CH4","H2O","NaCl"],correct:0},
         {q:"What is the main component of natural gas?",choices:["Methane","Ethane","Propane","Butane"],correct:0}
       ],
-      "separation techniques": [
+      "basics": [
         {q:"Which of the following changes is a physical change?",choices:["A. Rusting","B. Boiling","C. Burning","D. Decaying"],correct:1},
 {q:"A mixture of sand and ammonium chloride can be separated by",choices:["A. Filtration followed by sublimation","B. Sublimation followed by filtration","C. Addition of water followed by decantation","D. Crystallization"],correct:1},
 {q:"The colour of methyl orange in an alkaline solution is",choices:["A. Yellow","B. Red","C. Pink","D. Colourless"],correct:0},
@@ -142,7 +142,7 @@ const questionsData = {
 {q:"A change in which no new substance is formed is called",choices:["A. Chemical change","B. Physical change","C. Permanent change","D. Irreversible change"],correct:1},
 {q:"Which of the following is a noble gas?",choices:["A. Nitrogen","B. Oxygen","C. Argon","D. Hydrogen"],correct:2},
 {q:"The number of protons in an atom is equal to its",choices:["A. Mass number","B. Atomic number","C. Neutron number","D. Isotopic number"],correct:1},
-{q:"An element X has atomic number 8. The number of electrons in X is",choices:["A. 4","B. 6","C. 8","D. 10"],correct:2},
+{q:"An element X has atomic number 8. The number of protons in X is",choices:["A. 4","B. 6","C. 8","D. 10"],correct:2},
 {q:"Which of these is used in making electric bulbs?",choices:["A. Oxygen","B. Hydrogen","C. Nitrogen","D. Neon"],correct:2},
 {q:"The smallest particle of an element that can take part in a chemical reaction is the",choices:["A. Atom","B. Molecule","C. Ion","D. Proton"],correct:0},
 {q:"The neutralization of an acid by a base produces",choices:["A. Salt and acid","B. Salt and water","C. Water and base","D. Base only"],correct:1},
@@ -163,7 +163,7 @@ const questionsData = {
 {q:"The gas responsible for global warming is",choices:["A. Oxygen","B. Carbon dioxide","C. Hydrogen","D. Nitrogen"],correct:1},
 {q:"Which of these is used in fire extinguishers?",choices:["A. Hydrogen","B. Nitrogen","C. Carbon dioxide","D. Oxygen"],correct:2},
 {q:"The atomic number of an element represents the number of",choices:["A. Protons","B. Neutrons","C. Electrons","D. Nucleons"],correct:0},
-{q:"A proton carries a charge of",choices:["A. +1","B. -1","C. 0","D. +2"],correct:0},
+{q:"A proton carries a charge of",choices:["A. +1","B. -1","C. 0","D. -2"],correct:0},
 {q:"An element that forms basic oxides is likely to be",choices:["A. Metal","B. Non-metal","C. Metalloid","D. Noble gas"],correct:0},
 {q:"The valency of hydrogen is",choices:["A. 0","B. 1","C. 2","D. 3"],correct:1},
 {q:"The number of elements in the modern periodic table is about",choices:["A. 92","B. 100","C. 118","D. 120"],correct:2},
@@ -175,9 +175,7 @@ const questionsData = {
 {q:"The temperature at which a liquid changes to gas is called",choices:["A. Melting point","B. Boiling point","C. Freezing point","D. Evaporation point"],correct:1},
 {q:"Which of the following is a chemical change?",choices:["A. Melting of wax","B. Rusting of iron","C. Breaking of glass","D. Dissolving sugar"],correct:1},
 {q:"Which of these is a renewable energy source?",choices:["A. Coal","B. Petroleum","C. Wind","D. Natural gas"],correct:2},
-{q:"The process by which plants manufacture food is called",choices:["A. Respiration","B. Transpiration","C. Photosynthesis","D. Germination"],correct:2},
-{q:"The main product of photosynthesis is",choices:["A. Oxygen","B. Carbon dioxide","C. Glucose","D. Water"],correct:2},
-{q:"The process by which living cells break down food to release energy is called",choices:["A. Photosynthesis","B. Respiration","C. Transpiration","D. Digestion"],correct:1},
+{q:"The process by which energy is lost in form of heat is called",choices:["A. Respiration","B. exothermic process","C. endothermic process","D. Germination"],correct:1},
 {q:"The simplest form of matter that cannot be broken down chemically is",choices:["A. Compound","B. Mixture","C. Element","D. Molecule"],correct:2},
 {q:"The pH of a neutral solution is",choices:["A. 0","B. 7","C. 14","D. 10"],correct:1},
 {q:"Which of these is used as a drying agent?",choices:["A. Sodium chloride","B. Calcium chloride","C. Potassium chloride","D. Magnesium chloride"],correct:1},
